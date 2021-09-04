@@ -9,7 +9,8 @@ print("Você está na sala: {}".format(sala))
 input("Parece que essa sala só tem um unico caminho\n[1] - Continuar\n")
 sala = sala + 2
 elif sala == 10:
-    pass # adicionar funções para o Portal
+    print("Você acessou um portal mágico e será teletransportado para outra sala anterior")
+    sala = random.randint(1,9)
   else:
     print("Você está na sala: {}".format(sala))
     caminhoEscolhido = int(input("Escolha seu caminho:\n[1] - Caminho vermelho\n[2] - Caminho preto\n"))
